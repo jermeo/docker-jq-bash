@@ -9,7 +9,7 @@ Test `jq` command:
 
 ```bash
 $ docker run --rm --name jq endeveit/docker-jq \
-  sh -c 'echo "{\"foo\":\"bar\"}" | jq .'
+  bash -c 'echo "{\"foo\":\"bar\"}" | jq .'
 {
   "foo": "bar"
 }
@@ -19,7 +19,7 @@ Test a complex command:
 
 ```bash
 $ docker run --rm --name jq endeveit/docker-jq \
-  sh -c 'echo "{\"foo\":\"bar\"}" | jq ". | .foo as \$var | \$var"'
+  bash -c 'echo "{\"foo\":\"bar\"}" | jq ". | .foo as \$var | \$var"'
 "bar"
 ```
 

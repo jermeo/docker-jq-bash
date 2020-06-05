@@ -1,6 +1,6 @@
 FROM alpine
-MAINTAINER Nikita Vershinin <endeveit@gmail.com>
+MAINTAINER Jermeo <jermeo.fr@gmail.com>
 
-RUN apk add --update --no-cache curl jq
+RUN apk add --update --no-cache curl jq bash
 
-CMD ["sh"]
+CMD ["bash"]
